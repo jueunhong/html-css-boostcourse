@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title> HTML 문서의 기본 구조</title>
+    <style media="screen">
+        th,td { border: 1px solid; width: 0px; height: 100px}
+    </style>
+</head>
+
+<body>
+    <h1>Hello, HTML</h1>
+    <h2>제목 태그</h2>
+    <p>해당 페이지를 대표하는 큰 제목으로 주로 사용되며, <br>숫자가 올라갈수록 조금 더 낮은 수준의 소제목을 나타내게 됩니다.</p>
+    <p>하지만 현재 웹 페이지의 내용은 제목과 본문 식의 문서 형태보다는 
+        주로 이미지나 그림처럼 시각적인 형태로 표현되고 있어서 제목 태그를 h6까지 쓰는 경우는 거의 없습니다.</p>
+        <p>
+            <b>Lorem</b> <i>ipsum</i> dolor sit amet<br>
+            <u>Lorem</u> <s>ipsum</s> dolor sit amet
+        </p>
+    <a href="http://www.naver.com/" target="_blank">네이버</a>
+
+    <h1>월드컵 조편성</h1>
+    <ol>
+        <li>
+            A조
+            <ul>
+                <li>러시아</li>
+                <li>우루과이</li> 
+                <li>이집트</li>
+                <li>사우디</li>
+            </ul>
+        </li>
+        <li>
+            B조 
+            <ul>
+                <li>이란</li>
+                <li>스페인</li>
+                <li>포르투갈</li>
+                <li>모로코</li>
+            </ul>
+        </li>
+        <li>
+            C조
+            <ul>
+                <li>프랑스</li>
+                <li>덴마크</li>
+                <li>호주</li>
+                <li>페루</li>
+            </ul>
+        </li>
+    </ol>
+    <img src="https://www.shutterstock.com/ko/blog/wp-content/uploads/sites/17/2017/12/shutterstock_391762396.jpg?w=760&h=505" alt="눈" width="500">
+ 
+
+    <table>
+        <caption>Monthly Savings</caption>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Saving</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="2">Sum</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td rowspan="2">$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <table>
+        <caption>Specification values</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Grade.</th>
+                <th rowspan="2">Point.</th>
+                <th colspan="2">Strength.</th>
+                <th rowspan="2">Percent.</th>
+            </tr>
+            <tr>
+                <th>kg/mm</th>
+                <th>lb/in</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hard</td>
+                <td>0.45</td>
+                <td>56.2</td>
+                <td>80,000</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Medium</td>
+                <td>0.483</td>
+                <td>35</td>
+                <td>6543</td>
+                <td>34</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table>
+        <caption>콜레스트롤 검사의 정상범위</caption>
+        <thead>
+            <tr>
+                <th>검사항목</th>
+                <th colspan="4"> 양호 <------------> 높음 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">콜레스트롤</td>
+                <td colspan="2">정상</td>
+                <td>경계</td>
+                <td>높음</td>
+            </tr>
+            <tr>
+                <td colspan="2"><200</td>
+                <td>200~239</td>
+                <td>>=240</td>
+            </tr>
+            <tr>
+                <td rowspan="2">중성지방</td>
+                <td colspan="2">정상</td>
+                <td>경계</td>
+                <td>높음</td>
+            </tr>
+            <tr>
+                <td colspan="2"><150</td>
+                <td>150~199</td>
+                <td>200~499</td>
+            </tr>
+            <tr>
+                <td rowspan="2">LDL콜레스트롤</td>
+                <td>양호</td>
+                <td>높은정상</td>
+                <td>경계</td>
+                <td>높음</td>
+            </tr>
+            <tr>
+                <td><100</td>
+                <td>100~129</td>
+                <td>130~159</td>
+                <td>160~189</td>
+            </tr>
+            <tr>
+                <td rowspan="2">HDL콜레스트롤</td>
+                <td colspan="2">높음</td>
+                <td>-</td>
+                <td>낮음</td>
+            </tr>
+            <tr>
+                <td colspan="2"><60</td>
+                <td>-</td>
+                <td><40</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>    
+    <form action="/test.html">
+        <fiedlset>
+            <legend>기본정보</legend>
+            <label for="userid">아이디:</label>
+            <input type="text" id="userid" placeholder="영문으로만 입력하세요.">
+            <input type="submit">
+        </fiedlset><br>
+        <fiedlset>
+            <legend>부가정보</legend>
+            <label for="male">남자</label> <input type="radio" name="gender" id="male"checked>
+            <label for="female">여자</label> <input type="radio" name="gender" id="female">
+        </fiedlset>
+    </form>
+</body>
+
+
+</html>
